@@ -1,160 +1,164 @@
 <h1>Adding a new patient</h1>
-<div>
-  <%= f.label :first_name %><br />
-  <%= f.text_field :first_name %>
-</div>
-<div>
-  <%= f.label :last_name %><br />
-  <%= f.text_field :last_name %>
-</div>
-<div>
-  <%= f.label :address1 (label “Address”) %><br />
-  <%= f.text_field :address1 (label “Address”) %>
-</div>
-<div>
-  <%= f.label :city %><br />
-  <%= f.text_field :city %>
-</div>
-<div>
-  <%= f.label :state %><br />
-  <%= f.text_field :state %>
-</div>
-<div>
-  <%= f.label :zip %><br />
-  <%= f.text_field :zip %>
-</div>
-<div>
-  <%= f.label :phone %><br />
-  <%= f.text_field :phone %>
-</div>
-<div>
-  <%= f.label :work_phone %><br />
-  <%= f.text_field :work_phone %>
-</div>
-<div>
-  <%= f.label :cell_phone %><br />
-  <%= f.text_field :cell_phone %>
-</div>
-<div>
-  <%= f.label :social_security_number, "SS#" %><br />
-  <%= f.text_field :social_security_number %>
-</div>
-<div>
-  <%= f.label :birth_date, "D.O.B." %><br />
-  <%= f.date_select :birth_date %>
-</div>
-<div>
-  <%= f.label :first_visit %><br />
-  <%= f.date_select :first_visit %>
-</div>
-<div>
-  <%= f.label :last_visit %><br />
-  <%= f.date_select :last_visit %>
-</div>
-<div>
-  <%= f.label :last_visit %><br />
-  <%= f.select :last_visit, APP_CONFIG['options']['sex'] %>
-</div>
-<%# sex (f.select APP_CONFIG[‘options’][‘sex’], в этом и остальных селектах использовать :include_blank => true, если надо) %>
-<div>
-  <%= f.label :category %><br />
-  <%= f.select :category, APP_CONFIG['options']['category'] %>
-</div>
-<div>
-  <%= f.label :student %><br />
-  <%= f.select :student, APP_CONFIG['options']['student'] %>
-</div>
-<div>
-  <%= f.label :type %><br />
-  <%= f.select :type, APP_CONFIG['options']['student'] %>
-</div>
-<div>
-  <%= f.label :married %><br />
-  <%= f.select :married, APP_CONFIG['options']['married'] %>
-</div>
-<div>
-  <%= f.label :spouse %><br />
-  <%= f.text_field :spouse %>
-</div>
-<div>
-  <%= f.label :title, "Mr/Mrs/Ms" %><br />
-  <%= f.select :title, APP_CONFIG['options']['title'] %>
-</div>
-<div>
-  <%= f.label :account %><br />
-  <%= f.text_field :account %>
-</div>
-<div>
-  <%= f.label :work_status %><br />
-  <%= f.select :work_status, APP_CONFIG['options']['work_status'] %>
-</div>
-<div>
-  <%= f.label :clinic %><br />
-  <%= f.select :clinic, APP_CONFIG['options']['clinic'] %>
-</div>
-clinic (f.select APP_CONFIG[‘options’][‘clinic’])
-referred_by (f.select APP_CONFIG[‘options’][‘referred_by’], label “Patient referred to us by”)
-<div>
-  <%= f.label :occupation %><br />
-  <%= f.text_field :occupation %>
-</div>
-<div>
-  <%= f.label :employer %><br />
-  <%= f.text_field :employer %>
-</div>
-<div>
-  <%= f.label :work_address1 (label “Address”) %><br />
-  <%= f.text_field :work_address1 (label “Address”) %>
-</div>
-<div>
-  <%= f.label :work_city %><br />
-  <%= f.text_field :work_city %>
-</div>
-<div>
-  <%= f.label :work_state %><br />
-  <%= f.text_field :work_state %>
-</div>
-<div>
-  <%= f.label :work_zip %><br />
-  <%= f.text_field :work_zip %>
-</div>
-<div>
-  <%= f.label :work_comment %><br />
-  <%= f.text_field :work_comment %>
-</div>
-<div>
-  <%= f.label :email (кнопку не надо) %><br />
-  <%= f.text_field :email (кнопку не надо) %>
-</div>
-<div>
-  <%= f.label :release_info (checkbox) %><br />
-  <%= f.text_field :release_info (checkbox) %>
-</div>
-<div>
-  <%= f.label :send_statement (checkbox) %><br />
-  <%= f.text_field :send_statement (checkbox) %>
-</div>
-<div>
-  <%= f.label :finance_charge (checkbox) %><br />
-  <%= f.text_field :finance_charge (checkbox) %>
-</div>
-<div>
-  <%= f.label :authorization_on_file (checkbox) %><br />
-  <%= f.text_field :authorization_on_file (checkbox) %>
-</div>
-<div>
-  <%= f.label :supress_mail (checkbox) %><br />
-  <%= f.text_field :supress_mail (checkbox) %>
-</div>
-<div>
-  <%= f.label :inactive (checkbox) %><br />
-  <%= f.text_field :inactive (checkbox) %>
-</div>
-<div>
-  <%= f.label :nickname %><br />
-  <%= f.text_field :nickname %>
-</div>
-<div>
-  <%= f.label :top_label %><br />
-  <%= f.text_field :top_label %>
-</div>
+<% form_for :patient do |f| %>
+  <div>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div>
+    <%= f.label :address1, "Address" %><br />
+    <%= f.text_field :address1 %>
+  </div>
+  <div>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div>
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div>
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div>
+    <%= f.label :work_phone %><br />
+    <%= f.text_field :work_phone %>
+  </div>
+  <div>
+    <%= f.label :cell_phone %><br />
+    <%= f.text_field :cell_phone %>
+  </div>
+  <div>
+    <%= f.label :social_security_number, "SS#" %><br />
+    <%= f.text_field :social_security_number %>
+  </div>
+  <div>
+    <%= f.label :birth_date, "D.O.B." %><br />
+    <%= f.date_select :birth_date %>
+  </div>
+  <div>
+    <%= f.label :first_visit %><br />
+    <%= f.date_select :first_visit %>
+  </div>
+  <div>
+    <%= f.label :last_visit %><br />
+    <%= f.date_select :last_visit %>
+  </div>
+  <div>
+    <%= f.label :last_visit %><br />
+    <%= f.select :last_visit, APP_CONFIG['options']['sex'] %>
+  </div>
+  <%# sex (f.select APP_CONFIG[‘options’][‘sex’], в этом и остальных селектах использовать :include_blank => true, если надо) %>
+  <div>
+    <%= f.label :category %><br />
+    <%= f.select :category, APP_CONFIG['options']['category'] %>
+  </div>
+  <div>
+    <%= f.label :student %><br />
+    <%= f.select :student, APP_CONFIG['options']['student'] %>
+  </div>
+  <div>
+    <%= f.label :type %><br />
+    <%= f.select :type, APP_CONFIG['options']['student'] %>
+  </div>
+  <div>
+    <%= f.label :married %><br />
+    <%= f.select :married, APP_CONFIG['options']['married'] %>
+  </div>
+  <div>
+    <%= f.label :spouse %><br />
+    <%= f.text_field :spouse %>
+  </div>
+  <div>
+    <%= f.label :title, "Mr/Mrs/Ms" %><br />
+    <%= f.select :title, APP_CONFIG['options']['title'] %>
+  </div>
+  <div>
+    <%= f.label :account %><br />
+    <%= f.text_field :account %>
+  </div>
+  <div>
+    <%= f.label :work_status %><br />
+    <%= f.select :work_status, APP_CONFIG['options']['work_status'] %>
+  </div>
+  <div>
+    <%= f.label :clinic %><br />
+    <%= f.select :clinic, APP_CONFIG['options']['clinic'] %>
+  </div>
+  <div>
+    <%= f.label :referred_by, "Patient referred to us by" %><br />
+    <%= f.select :referred_by, APP_CONFIG['options']['referred_by'] %>
+  </div>
+  <div>
+    <%= f.label :occupation %><br />
+    <%= f.text_field :occupation %>
+  </div>
+  <div>
+    <%= f.label :employer %><br />
+    <%= f.text_field :employer %>
+  </div>
+  <div>
+    <%= f.label :work_address1, "Address" %><br />
+    <%= f.text_field :work_address1 %>
+  </div>
+  <div>
+    <%= f.label :work_city %><br />
+    <%= f.text_field :work_city %>
+  </div>
+  <div>
+    <%= f.label :work_state %><br />
+    <%= f.text_field :work_state %>
+  </div>
+  <div>
+    <%= f.label :work_zip %><br />
+    <%= f.text_field :work_zip %>
+  </div>
+  <div>
+    <%= f.label :work_comment %><br />
+    <%= f.text_field :work_comment %>
+  </div>
+  <div>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div>
+    <%= f.label :release_info %><br />
+    <%= f.text_field :release_info %>
+  </div>
+  <div>
+    <%= f.label :send_statement %><br />
+    <%= f.text_field :send_statement %>
+  </div>
+  <div>
+    <%= f.label :finance_charge %><br />
+    <%= f.text_field :finance_charge %>
+  </div>
+  <div>
+    <%= f.label :authorization_on_file %><br />
+    <%= f.text_field :authorization_on_file %>
+  </div>
+  <div>
+    <%= f.label :supress_mail %><br />
+    <%= f.text_field :supress_mail %>
+  </div>
+  <div>
+    <%= f.label :inactive %><br />
+    <%= f.text_field :inactive %>
+  </div>
+  <div>
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </div>
+  <div>
+    <%= f.label :top_label %><br />
+    <%= f.text_field :top_label %>
+  </div>
+<% end %>

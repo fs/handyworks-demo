@@ -5,7 +5,25 @@ defaults: &defaults
      sex:
        - 'male'
        - 'female'
-                 
+     category:
+       - 'cat1'
+     student:
+       - 'test'
+     type:
+       - 'test'
+     married:
+       - 'test'
+     title:
+       - 'Mr'
+       - 'Mrs'
+       - 'Ms'
+     work_status:
+       - 'test'
+     clinic:
+       - 'test'
+     referred_by:
+       - 'test'
+       - 'test'
 development:
   <<: *defaults
 
