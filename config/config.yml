@@ -1,0 +1,16 @@
+defaults: &defaults
+  app_name: Handy Works
+  host: localhost:3000
+  options:
+     sex:
+       - 'male'
+       - 'female'
+                 
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
