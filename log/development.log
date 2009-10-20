@@ -10322,3 +10322,158 @@ Rendering patients/new
   [4;36;1mRefferedBy Load (3.3ms)[0m   [0;1mSELECT * FROM "reffered_bies" [0m
 Rendered patients/_form (214.1ms)
 Completed in 313ms (View: 214, DB: 9) | 200 OK [http://localhost/patients/new]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (23.6ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "clinics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "patients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "nickname" varchar(255), "address1" varchar(255), "city" varchar(255), "state" varchar(255), "zip" varchar(255), "phone" varchar(255), "work_phone" varchar(255), "cell_phone" varchar(255), "social_security_number" varchar(255), "birth_date" date, "first_visit" datetime, "last_visit" datetime, "sex" varchar(255), "category_id" integer, "student" varchar(255), "patient_type" varchar(255), "married" varchar(255), "spouse" varchar(255), "account" varchar(255), "work_status" varchar(255), "clinic_id" integer, "referred_by_id" integer, "occupation" varchar(255), "employer" varchar(255), "work_address1" varchar(255), "work_city" varchar(255), "work_state" varchar(255), "work_zip" varchar(255), "work_comment" text, "release_info" boolean, "send_statement" boolean, "finance_charge" boolean, "authorization_on_file" boolean, "supress_mail" boolean, "inactive" boolean, "top_label" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "reffered_bies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020073028')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091020070108')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020071509')[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091020072346')[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020072403')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091020072529')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020073009')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "clinics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "patients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "nickname" varchar(255), "address1" varchar(255), "city" varchar(255), "state" varchar(255), "zip" varchar(255), "phone" varchar(255), "work_phone" varchar(255), "cell_phone" varchar(255), "social_security_number" varchar(255), "birth_date" date, "first_visit" datetime, "last_visit" datetime, "sex" varchar(255), "category_id" integer, "student" varchar(255), "patient_type" varchar(255), "married" varchar(255), "spouse" varchar(255), "account" varchar(255), "work_status" varchar(255), "clinic_id" integer, "referred_by_id" integer, "occupation" varchar(255), "employer" varchar(255), "work_address1" varchar(255), "work_city" varchar(255), "work_state" varchar(255), "work_zip" varchar(255), "work_comment" text, "release_info" boolean, "send_statement" boolean, "finance_charge" boolean, "authorization_on_file" boolean, "supress_mail" boolean, "inactive" boolean, "top_label" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "reffered_bies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020073028')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091020070108')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020071509')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091020072346')[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020072403')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091020072529')[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020073009')[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-20 19:44:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2009-10-20 19:44:27) [GET]
+
+SyntaxError (/Users/anton/code/handy-works/app/models/patient.rb:5: syntax error, unexpected kEND):
+  app/controllers/patients_controller.rb:7:in `new'
+
+Rendered rescues/_trace (35.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2009-10-20 19:44:38) [GET]
+Rendering template within layouts/application
+Rendering patients/new
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Category) on line #79 of app/views/patients/_form.html.erb:
+76: 	  
+77: 	  <div>
+78:   		<%= f.label :category_id, 'Category' %>
+79:   		<%= f.select :category_id, Category.all.collect { |c| [c.name, c.id] }, { :include_blank => true } %>
+80: 	  </div>
+81: 	  
+82: 	  <div>
+
+    app/views/patients/_form.html.erb:79
+    app/views/patients/_form.html.erb:1
+    app/views/patients/new.html.erb:5
+
+Rendered rescues/_trace (90.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2009-10-20 19:45:25) [GET]
+Rendering template within layouts/application
+Rendering patients/new
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Category) on line #79 of app/views/patients/_form.html.erb:
+76: 	  
+77: 	  <div>
+78:   		<%= f.label :category_id, 'Category' %>
+79:   		<%= f.select :category_id, Category.all.collect { |c| [c.name, c.id] }, { :include_blank => true } %>
+80: 	  </div>
+81: 	  
+82: 	  <div>
+
+    app/views/patients/_form.html.erb:79
+    app/views/patients/_form.html.erb:1
+    app/views/patients/new.html.erb:5
+
+Rendered rescues/_trace (93.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PatientsController#new (for 127.0.0.1 at 2009-10-20 19:45:41) [GET]
+Rendering template within layouts/application
+Rendering patients/new
+Rendered patients/_form (21.6ms)
+Completed in 34ms (View: 26, DB: 0) | 200 OK [http://localhost/patients/new]
