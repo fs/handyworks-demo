@@ -1,0 +1,79 @@
+
+
+Processing HomeController#index (for 78.138.140.122 at 2009-10-01 11:40:19) [GET]
+Rendering home/index
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://handywork.flatsourcing.com/]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:40:22) [GET]
+Rendering patients/new
+Completed in 196ms (View: 192, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:40:29) [POST]
+  Parameters: {"authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 12ms (View: 12, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:42:35) [POST]
+  Parameters: {"authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 188ms (View: 184, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:42:39) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 12ms (View: 12, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:43:08) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:43:23) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 12ms (View: 12, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:43:28) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 12ms (View: 12, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:43:51) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 184ms (View: 180, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:44:00) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Rendering patients/new
+Completed in 12ms (View: 12, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]
+
+
+Processing PatientsController#create (for 78.138.140.122 at 2009-10-01 11:44:07) [POST]
+  Parameters: {"commit"=>"Add", "authenticity_token"=>"k+jegqVAdzXuOe+qWQkfBLDES2oHsJijgF2dvepx5rA=", "patient"=>{"authorization_on_file"=>"", "occupation"=>"", "social_security_number"=>"", "work_phone"=>"", "city"=>"", "address1"=>"", "clinic"=>"test", "category"=>"cat1", "birth_date(1i)"=>"2009", "zip"=>"", "send_statement"=>"", "account"=>"", "title"=>"Mr", "married"=>"test", "birth_date(2i)"=>"10", "top_label"=>"", "nickname"=>"", "work_state"=>"", "birth_date(3i)"=>"1", "inactive"=>"", "work_address1"=>"", "work_status"=>"test", "type"=>"test", "last_visit(1i)"=>"2009", "employer"=>"", "last_visit(2i)"=>"10", "first_visit(1i)"=>"2009", "last_visit"=>"male", "last_visit(3i)"=>"1", "first_visit(2i)"=>"10", "cell_phone"=>"", "finance_charge"=>"", "work_city"=>"", "first_visit(3i)"=>"1", "phone"=>"", "work_zip"=>"", "first_name"=>"", "referred_by"=>"test", "student"=>"test", "last_name"=>"", "supress_mail"=>"", "release_info"=>"", "email"=>"", "work_comment"=>"", "spouse"=>"", "state"=>""}}
+Redirected to http://handywork.flatsourcing.com/
+Completed in 0ms (DB: 0) | 302 Found [http://handywork.flatsourcing.com/patients]
+
+
+Processing HomeController#index (for 78.138.140.122 at 2009-10-01 11:44:08) [GET]
+Rendering home/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://handywork.flatsourcing.com/]
+
+
+Processing HomeController#index (for 78.138.140.122 at 2009-10-01 11:46:02) [GET]
+Rendering home/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://handywork.flatsourcing.com/]
+
+
+Processing PatientsController#new (for 78.138.140.122 at 2009-10-01 11:46:03) [GET]
+Rendering patients/new
+Completed in 180ms (View: 180, DB: 0) | 200 OK [http://handywork.flatsourcing.com/patients/new]

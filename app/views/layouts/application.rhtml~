@@ -1,0 +1,13 @@
+<html>
+  <head>
+	<title><%= title :site_name => 'Handyworks' %></title>
+  <%= stylesheet_link_tag 'main', :cache => 'cached/user' %>
+    </head>
+  <body>
+
+	<%= flash[:notice] %>
+
+	<%= yield %>
+	
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<p class="name">Universal Health Clinic</p>
+
+<ul class="steps">
+  <li class="first active"><%= link_to "New patient", new_patient_path %></li>
+  <li><a href="#">2 step</a></li>
+  <li><a href="#">3 step</a></li>
+  <li class="last"><a href="#">4 step</a></li>
+</ul>
+
+<h1>...</h1>
+
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to "Show", @patient %> |
+  <%= link_to "View All", patients_path %>
+</p>

@@ -1,0 +1,17 @@
+Factory.define :patient do |f|
+	f.title 'Mr'
+	f.first_name 'Name'
+	f.last_name 'Family'
+	f.email 'no@email'
+	f.nickname 'nick'
+	f.address1 'Street'
+	f.city 'City'
+	f.state 'State'
+	f.zip '12345'
+	f.phone '123-12-12'
+	f.work_phone '123-12-12'
+	f.cell_phone '123-12-12'
+	f.social_security_number '12312414'
+	f.birth_date '11/11/1985'
+	f.sex 'M'
+end
