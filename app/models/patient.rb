@@ -1,8 +1,5 @@
 class Patient < ActiveRecord::Base
-	validates_presence_of :first_name, :last_name, :email, :address1, :city, :state, :zip, :phone,
-		:social_security_number, :birth_date, :sex
-
-	belongs_to :category
-	belongs_to :clinic
-	belongs_to :referred_by
+	validates_presence_of :first_name, :last_name, :email
+	validates_presence_of :social_security_number, :birth_date, :sex
+	validates_presence_of :address1, :city, :state, :zip, :phone
 end

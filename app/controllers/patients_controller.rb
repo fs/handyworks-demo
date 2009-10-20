@@ -3,10 +3,6 @@ class PatientsController < ApplicationController
     @patients = Patient.all
   end
   
-  def show
-    @patient = Patient.find(params[:id])
-  end
-  
   def new
     @patient = Patient.new
   end
@@ -14,10 +10,10 @@ class PatientsController < ApplicationController
   def create
     @patient = Patient.new(params[:patient])
     if @patient.save
-      flash[:notice] = "Successfully created patient."
+      flash[:notice] = 'Successfully created a patient'
       redirect_to patients_path
     else
-      render :action => 'new'
+      render 'new'
     end
   end
   
@@ -28,10 +24,10 @@ class PatientsController < ApplicationController
   def update
     @patient = Patient.find(params[:id])
     if @patient.update_attributes(params[:patient])
-      flash[:notice] = "Successfully updated patient."
+      flash[:notice] = 'Successfully updated a patient'
       redirect_to patients_path
     else
-      render :action => 'edit'
+      render 'edit'
     end
   end
 end
