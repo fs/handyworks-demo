@@ -412,3 +412,8 @@
   hr {
     clear: both;
   }
+
+label.required
+{
+	background: url('/images/required.png') no-repeat 50% 0%;
+}
