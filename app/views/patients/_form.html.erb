@@ -120,7 +120,7 @@
 	  
 	  <div>
   		<%= f.label :work_state %>
-  		<%= f.state_select :work_state %>
+  		<%= f.text_field :work_state %>
 	  </div>
 	  
 	  <div>
@@ -204,7 +204,6 @@
 		  <%= f.select :married, APP_CONFIG['options']['married'] %>
 	      </div>
 	  </div>
-	  
 	  <div>
   		<%= f.label :work_status %>
   		<%= f.select :work_status, APP_CONFIG['options']['work_status'] %>
