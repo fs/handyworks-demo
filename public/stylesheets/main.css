@@ -40,12 +40,15 @@
       border:3px solid #fbb;
       margin:1em 0;
       padding:0.5em;
+      width:55em;
       }
       div.errorExplanation ul li {
 	list-style:disc inside;
 	color:#f66;
-	margin:0.35em 0 0.35em 1.5em;
+	margin:0.5em 0 0.5em 1.5em;
 	font-size:1.2em;
+	width:45em;
+	line-height:1.2em;
       }
   div.form div.fieldWithErrors input { border:2px solid #faa; }
   div.form div.fieldWithErrors label { color:#f66; font-weight:bold; }
@@ -169,7 +172,7 @@
         
       }
       ul.steps li.active a { color:#fff; text-decoration:underline; cursor:pointer; }
-      ul.steps li.first a  { background:url('/images/med.png') no-repeat; padding-left:3.5em; }
+      ul.steps li.first a  { background:url('/images/med.png') 0.5em 0 no-repeat; padding-left:4em; }
       ul.steps li.last a {
         border:none;
       }
