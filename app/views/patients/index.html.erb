@@ -1,3 +1,5 @@
+<% title 'Patients' %>
+
 <div class="actions"><%= link_to "Add New Patient", new_patient_path, :class => 'new-pacient' %></div>
 <div class="pacients">
   <table class="patients" border="0" cellspacing="0" cellpadding="0">
@@ -13,17 +15,8 @@
 	  </tr>
     </thead>
     <tbody>
-	<% @counter = 0 %>
 	<% for patient in @patients %>
-	<%
-	  @counter = @counter + 1
-	  if (@counter % 2 == 1)
-		@classname = 'first'
-	  else
-		@classname = 'second'
-	  end
-	%>
-	  <tr class="<%=h @classname %>">
+	  <tr class="<%= cycle 'first', 'second'  %>">
 		<td><%=h patient.account %></td>
 		<td><%=h patient.first_name %></td>
 		<td><%=h patient.last_name %></td>
