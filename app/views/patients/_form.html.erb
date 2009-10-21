@@ -76,7 +76,7 @@
 	  
 	  <div>
   		<%= f.label :category_id, 'Category' %>
-  		<%#= f.select :category_id, Category.all.collect { |c| [c.name, c.id] }, { :include_blank => true } %>
+  		<%= f.select :category_id, APP_CONFIG['options']['category'], { :include_blank => true } %>
 	  </div>
 	  
 	  <div>
@@ -111,12 +111,12 @@
 	  
 	  <div>
   		<%= f.label :clinic_id, 'Clinic' %>
-  		<%#= f.select :clinic_id, Clinic.all.collect { |c| [c.name, c.id] }, { :include_blank => true } %>
+  		<%= f.select :clinic_id, APP_CONFIG['options']['clinic'], { :include_blank => true } %>
 	  </div>
 	  
 	  <div>
   		<%= f.label :referred_by_id, "Patient referred to us by" %>
-  		<%#= f.select :referred_by_id, RefferedBy.all.collect { |r| [r.name, r.id] }, { :include_blank => true } %>
+  		<%= f.select :referred_by_id, APP_CONFIG['options']['referred_by'], { :include_blank => true } %>
 	  </div>
   </div>
   
@@ -124,7 +124,7 @@
     <h2>Other Data</h2>
     
 	  <div>
-  		<%= f.label :sex, 'Occupation' %>
+  		<%= f.label :sex %>
   		<%= f.select :sex, APP_CONFIG['options']['sex'] %>
 	  </div>
 	  

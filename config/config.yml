@@ -6,24 +6,46 @@ defaults: &defaults
        - 'male'
        - 'female'
      category:
-       - 'cat1'
+       - 'Category 1'
+       - 'Category 2'
+       - 'Category 3'
      student:
-       - 'test'
+       - 'Full time'
+       - 'Part time'
      type:
-       - 'test'
+       - 'Type 1'
+       - 'Type 2'
+       - 'Type 3'
      married:
-       - 'test'
+      - 'Single'
+      - 'Married'
+      - 'Divorced'
+      - 'Widowed'
+      - 'Unknown'
      title:
-       - 'Mr'
-       - 'Mrs'
-       - 'Ms'
+      - 'Mr.'
+      - 'Ms.'
+      - 'Mrs.'
+      - 'Miss.'
+      - 'Dr.'
+      - 'Rev.'
+      - 'Hon.'
+      - 'Fr.'
      work_status:
-       - 'test'
+      - 'Unemployed'
+      - 'Full'
+      - 'Part'
+      - 'Retired'
+      - 'Disabled - Not working'
+      - 'Self-Employed'
      clinic:
-       - 'test'
+      - 'Universal Health Clinic'
      referred_by:
-       - 'test'
-       - 'test'
+      - 'Aiken, Bill'
+      - 'Chevas Sandage'
+      - 'Free spirit'
+      - 'Geffenberg, Justin'
+      
 development:
   <<: *defaults
 

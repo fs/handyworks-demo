@@ -25,8 +25,45 @@
     a:visited {
       color:#ccc;
     }
-  
   p.name { padding:1em 2.2em 0; text-indent:-9999em; }
+  
+  /* Errors */
+  
+  div.errorExplanation  {
+    margin: 1.5em;
+    }
+    div.errorExplanation h2 { font-size:1.5em; }
+    div.errorExplanation p { font-size:1.2em; }
+    div.errorExplanation ul {
+      -moz-border-radius:10px;
+      background:#ffefef;
+      border:3px solid #fbb;
+      margin:1em 0;
+      padding:0.5em;
+      }
+      div.errorExplanation ul li {
+	list-style:disc inside;
+	color:#f66;
+	margin:0.35em 0 0.35em 1.5em;
+	font-size:1.2em;
+      }
+  div.form div.fieldWithErrors input { border:2px solid #faa; }
+  div.form div.fieldWithErrors label { color:#f66; font-weight:bold; }
+
+  div.notice {
+    background:#efe;
+    border:3px solid #366;
+    color:#366;
+    float:left;
+    font-size:1.5em;
+    left:10px;
+    margin-left:0.5em;
+    padding:0.5em 1em;
+    position:absolute;
+    top:10px;
+    -moz-border-radius:10px;
+    font-size:1.2em;
+  }
     
   h1 {
     float:left;
@@ -132,6 +169,7 @@
         
       }
       ul.steps li.active a { color:#fff; text-decoration:underline; cursor:pointer; }
+      ul.steps li.first a  { background:url('/images/med.png') no-repeat; padding-left:3.5em; }
       ul.steps li.last a {
         border:none;
       }
@@ -148,26 +186,49 @@
   hr {
     clear: both;
   }
-
-  div.errorExplanation
-  {
-	margin: 16px 40px;
-  }
-	div.errorExplanation p
-	{
-	  margin: 6px 0px;
-	}
-
-div.notice
-{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 1.5em;
-}
-
-table.patients
-{
-  clear: both;
-  margin: 10px 20px;
-}
+  div.actions {
+    float:left;
+    text-align:right;
+    width:72em;
+    *height:2.5em;
+    }
+    div.actions a.new-pacient {
+      background:#fff;
+      color:#666;
+      -moz-border-radius-topleft:10px;
+      -moz-border-radius-topright:10px;
+      padding:0.8em 2.5em;
+      line-height:2em;
+      *line-height:2.5em;
+      font-size:1.1em;
+      font-weight:bold;
+      }
+      div.actions a.new-pacient:hover {
+	color:#333;
+    }
+  div.pacients {
+    background:#efefef ;
+    -moz-border-radius:10px;
+    border:4px solid #fff;
+    margin:0 1.5em 1em;
+    padding:2em;
+    color:#333;
+    overflow:hidden;
+    float:left;
+    width:70em;
+    }
+    div.pacients a { color:#333; font-weight:normal; }
+    table.patients
+    {
+      clear:both;
+      margin:0;
+      font-size:1.1em;
+      width:100%;
+      text-align:left;
+      border:1px solid #ccc;
+    }
+    table.patients th { font-size:1.1em; height:2.2em; background:#ccc; padding-left:0.5em; }
+    table.patients tr { height:2.4em; }
+    table.patients tr.first { background:#fff; }
+    table.patients tr.second { background:#eee; }
+    table.patients td { padding-left:0.5em; }

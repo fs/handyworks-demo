@@ -84,7 +84,7 @@
       }
       ul.steps li.active a:hover,
       ul.steps li.current a {
-        background:#333;
+      	background:url('/images/med.png') no-repeat #333;
         color:#fff;
         
       }

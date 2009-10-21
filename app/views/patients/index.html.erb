@@ -1,28 +1,26 @@
-<p class="name">Universal Health Clinic</p>
-
-<h1>...</h1>
-
-<table class="patients">
-  <thead>
-  	<tr>
-  	  <th>Account</th>
-  	  <th>First Name</th>
-  	  <th>Last Name</th>
-  	  <th>Email</th>
-  	  <th>Address</th>
-  	  <th>Phone</th>
-  	  <th>Actions</th>
-  	</tr>
-  </thead>
-  <tbody>
+<div class="actions"><%= link_to "Add New Patient", new_patient_path, :class => 'new-pacient' %></div>
+<div class="pacients">
+  <table class="patients" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+	  <tr>
+	    <th>Account</th>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+	    <th>Email</th>
+	    <th>Address</th>
+	    <th>Phone</th>
+	    <th>Actions</th>
+	  </tr>
+    </thead>
+    <tbody>
 	<% @counter = 0 %>
 	<% for patient in @patients %>
 	<%
 	  @counter = @counter + 1
 	  if (@counter % 2 == 1)
-		@classname = 'odd'
+		@classname = 'first'
 	  else
-		@classname = 'even'
+		@classname = 'second'
 	  end
 	%>
 	  <tr class="<%=h @classname %>">
@@ -35,7 +33,6 @@
 		<td><%= link_to "Edit", edit_patient_path(patient) %></td>
 	  </tr>
 	<% end %>
-  </tbody>
-</table>
-
-<p><%= link_to "New Patient", new_patient_path %></p>
+    </tbody>
+  </table>
+</div>
