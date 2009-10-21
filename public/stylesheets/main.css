@@ -92,7 +92,7 @@
     -moz-border-radius:10px;
     border:4px solid #fff;
     margin:0 1.5em 1em;
-    padding:2.5em 1.5em 0.3em 3em;
+    padding:2.5em 1em 0.3em 3em;
     overflow:hidden;
     float:left;
   }
@@ -100,7 +100,7 @@
   ul.column {
     float: left;
     width: auto;
-    padding: 0 2.5em 2em 0;
+    padding: 0 2em 2em 0;
     height:16em;
 
     }
