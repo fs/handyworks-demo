@@ -431,7 +431,15 @@
     clear: both;
   }
 
-label.required
+div.buttons-area p.required {
+  margin:0 0 2em;
+  font-size:1.1em;
+  font-style:italic;
+  color:#fff;
+}
+.required
 {
-	background: url('/images/required.png') no-repeat 50% 0%;
+	background: url('/images/required.gif') no-repeat 0 0;
+	padding-left:1em;
+	width:11em !important;
 }
