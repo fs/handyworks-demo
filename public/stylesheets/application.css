@@ -36,6 +36,7 @@
     div.errorExplanation p { font-size:1.2em; }
     div.errorExplanation ul {
       -moz-border-radius:10px;
+      -webkit-border-radius:10px;
       background:#ffefef;
       border:3px solid #fbb;
       margin:1em 0 1em 2em;
@@ -65,6 +66,7 @@
     position:absolute;
     top:10px;
     -moz-border-radius:10px;
+    -webkit-border-radius:10px;
     font-size:1.2em;
   }
 
@@ -90,6 +92,7 @@
   div.columns {
     background:#efefef ;
     -moz-border-radius:10px;
+    -webkit-border-radius:10px;
     border:4px solid #fff;
     margin:0 1.5em 1em;
     padding:2.5em 1em 0.3em 3em;
@@ -117,6 +120,7 @@
       ul.column li a {
         background:#666;
         -moz-border-radius:7px;
+	-webkit-border-radius:7px;
         padding:7px;
         text-align:center;
         text-decoration:none;
@@ -150,7 +154,9 @@
     border:2px solid #555;
     border-top:0;
     -moz-border-radius-bottomleft:10px;
+    -webkit-border-radius-bottomleft:10px;
     -moz-border-radius-bottomright:10px;
+    -webkit-border-radius-bottomright:10px;
     margin:-2.5em 2em 1em;
   }
     ul.steps li {
@@ -181,9 +187,11 @@
       }
       ul.steps li.first a:hover {
         -moz-border-radius-bottomleft:5px;
+	-webkit-border-radius-bottomleft:5px;
       }
       ul.steps li.last a:hover {
-        -moz-border-radius-bottomrigth:5px;
+        -moz-border-radius-bottomright:5px;
+	-webkit-border-radius-bottomright:5px;
       }
 
   hr {
@@ -199,7 +207,9 @@
       background:#fff;
       color:#666;
       -moz-border-radius-topleft:10px;
+      -webkit-border-radius-topleft:10px;
       -moz-border-radius-topright:10px;
+      -webkit-border-radius-topright:10px;
       padding:0.8em 2.5em;
       line-height:2em;
       *line-height:2.5em;
@@ -212,6 +222,7 @@
   div.pacients {
     background:#efefef ;
     -moz-border-radius:10px;
+    -webkit-border-radius:10px;
     border:4px solid #fff;
     margin:0 1.5em 1em;
     padding:2em;
@@ -308,7 +319,9 @@
     border:2px solid #555;
     border-top:0;
     -moz-border-radius-bottomleft:10px;
+    -webkit-border-radius-bottomleft:10px;
     -moz-border-radius-bottomright:10px;
+    -webkit-border-radius-bottomright:10px;
     margin:-2.5em 2em 1em;
   }
     ul.steps li {
@@ -340,19 +353,23 @@
       }
       ul.steps li.first a:hover {
         -moz-border-radius-bottomleft:5px;
+	-webkit-border-radius-bottomleft:5px;
       }
       ul.steps li.first.current a {
         -moz-border-radius-bottomleft:5px;
+	-webkit-border-radius-bottomleft:5px;
         background:#699;
       }
       ul.steps li.last a:hover {
         -moz-border-radius-bottomrigth:5px;
+	-webkit-border-radius-bottomright:5px;
       }
   form { float:left; }
 
   div.form {
     background:#efefef ;
     -moz-border-radius:10px;
+    -webkit-border-radius:10px;
     border:4px solid #fff;
     margin:0 1em 1em;
     padding:1.5em 3em 0.3em 3em;
@@ -392,6 +409,7 @@
     div.buttons-area input {
       background:#555;
         -moz-border-radius:7px;
+	-webkit-border-radius:7px;
         padding:7px;
         text-align:center;
         text-decoration:none;
