@@ -246,6 +246,7 @@
       width:4.5em;
     }
      div.form div.two-col.last label { width:6em; }
+    div.form div.two-col select { width:7.3em; }
 
   * {
     margin:0;
@@ -325,14 +326,14 @@
         font-weight:normal;
         font-size:1.1em;
         color:#999;
-        text-decoration:none;
+        text-decoration:underline;
       }
+      ul.steps li a:hover { color:#fff; }
       ul.steps li.active a { color:#fff; text-decoration:underline; }
       ul.steps li.last a {
         border:none;
       }
-      ul.steps li.active a:hover,
-      ul.steps li.current a {
+      ul.steps li.first a:hover {
       	background:url('/images/med.png') 0.5em 0 no-repeat #333;
         color:#fff;
 
@@ -406,7 +407,7 @@
         cursor:pointer;
         }
         div.buttons-area input:hover { background:#666; }
-         div.buttons-area a { color:#fff; }
+         div.buttons-area a { color:#fff; margin-left:1em; }
 
   hr {
     clear: both;

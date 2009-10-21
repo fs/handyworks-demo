@@ -12,10 +12,11 @@
 	  <p class="name">Universal Health Clinic</p>
 
 	  <ul class="steps">
-		<li class="first active"><%= link_to "Patients", patients_path %></li>
-		<li><a href="#">2 step</a></li>
-		<li><a href="#">3 step</a></li>
-		<li class="last"><a href="#">4 step</a></li>
+		<li class="first"><a href="/">Home</a></li>
+		<li><%= link_to "Patients", patients_path %></li>
+		<li><a href="#">menu item 2</a></li>
+		<li><a href="#">menu item 3</a></li>
+		<li class="last"><a href="#">menu item 4</a></li>
 	  </ul>
 
       <%- flash.each do |name, msg| -%>
