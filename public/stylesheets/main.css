@@ -235,3 +235,14 @@
     table.patients tr.first { background:#fff; }
     table.patients tr.second { background:#eee; }
     table.patients td { padding-left:0.5em; }
+    
+  div.form div.two-col {
+    float:left;
+    width:14.5em;
+    margin-top:1em;
+    }
+    div.form div.two-col.last { width:16em; }
+    div.form div.two-col label {
+      width:4.5em;
+    }
+     div.form div.two-col.last label { width:6em; }
