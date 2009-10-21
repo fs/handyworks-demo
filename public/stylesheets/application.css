@@ -399,6 +399,16 @@
       div.form div.check label { float:none; width:auto; }
       div.form div.check input { float:left; margin-right:0.5em; }
       div.form input { padding:0.2em 0;}
+      div.form select { width:15.55em; }
+      div.form div.dob select,
+      div.form div.first-visit select,
+      div.form div.last-visit select { width:auto; }
+      div.form div.dob select#patient_birth_date_3i,
+      div.form div.first-visit select#patient_first_visit_3i,
+      div.form div.last-visit select#patient_last_visit_3i { width:4.5em; }
+      
+      div.form div.last-visit { padding-bottom:8em; }
+      
 
   div.buttons-area {
     padding: 1em 0 2em 3em;
