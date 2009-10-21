@@ -2,20 +2,21 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title><%= h(yield(:title) || "Handyworks") %></title>
+    <title>Handyworks - <%= h(yield(:title) || "Home") %></title>
     <%= stylesheet_link_tag 'application' %>
     <%= yield(:head) %>
   </head>
   <body>
     <div id="container">
-
-	  <p class="name">Universal Health Clinic</p>
+      
+  	  <p class="name">Universal Health Clinic</p>
 
 	  <ul class="steps">
-		<li class="first active"><%= link_to "Patients", patients_path %></li>
-		<li><a href="#">2 step</a></li>
-		<li><a href="#">3 step</a></li>
-		<li class="last"><a href="#">4 step</a></li>
+		<li class="first"><a href="/">Home</a></li>
+		<li><%= link_to "Patients", patients_path %></li>
+		<li><a href="#">menu item 2</a></li>
+		<li><a href="#">menu item 3</a></li>
+		<li class="last"><a href="#">menu item 4</a></li>
 	  </ul>
 
       <%- flash.each do |name, msg| -%>
