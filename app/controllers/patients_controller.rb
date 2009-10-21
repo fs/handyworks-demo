@@ -1,12 +1,10 @@
 class PatientsController < ApplicationController
   def index
     @patients = Patient.all
-		@title = 'Patients'
   end
   
   def new
     @patient = Patient.new
-		@title = 'New patient'
   end
   
   def create
@@ -21,7 +19,6 @@ class PatientsController < ApplicationController
   
   def edit
     @patient = Patient.find(params[:id])
-		@title = 'Edit patient'
   end
   
   def update

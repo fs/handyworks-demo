@@ -1,27 +1,32 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-	<title>
-	  Handyworks
-	  <% if @title %>
-		 - <%=h @title %>
-	  <% end  %>
-	</title>
-	<%= stylesheet_link_tag 'main', 'patient', :cache => 'cached/user' %>
+    <title><%= h(yield(:title) || "Handyworks") %></title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= yield(:head) %>
   </head>
   <body>
+    <div id="container">
 
-	<% if flash[:notice] %>
-	  <div class="notice">
-		<%= flash[:notice] %>
-	  </div>
-	<% end %>
+	  <p class="name">Universal Health Clinic</p>
 
-	<% if @title %>
-	  <h1><%=h @title %></h1>
-	 <% end %>
+	  <ul class="steps">
+		<li class="first active"><%= link_to "Patients", patients_path %></li>
+		<li><a href="#">2 step</a></li>
+		<li><a href="#">3 step</a></li>
+		<li class="last"><a href="#">4 step</a></li>
+	  </ul>
 
-	<%= yield %>
-
+      <%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}", :class => 'notice' %>
+      <%- end -%>
+      
+      <%- if show_title? -%>
+        <h1><%=h yield(:title) %></h1>
+      <%- end -%>
+      
+      <%= yield %>
+    </div>
   </body>
 </html>
