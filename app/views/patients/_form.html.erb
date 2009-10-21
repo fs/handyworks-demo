@@ -73,32 +73,15 @@
   		<%= f.label :last_visit %>
   		<%= f.date_select :last_visit %>
 	  </div>
-	  <div class="two-col">
-	    <div>
-		  <%= f.label :category_id, 'Category' %>
-		  <%= f.select :category_id, APP_CONFIG['options']['category'], { :include_blank => true } %>
-	    </div>
-	    
-	    <div>
-		  <%= f.label :student %>
-		  <%= f.select :student, APP_CONFIG['options']['student'] %>
-	    </div>
-	  </div>
-	  <div class="two-col last">
-	    <div>
-		  <%= f.label :patient_type %>
-		  <%= f.select :patient_type, APP_CONFIG['options']['type'] %>
-	    </div>
-	    
-	    <div>
-		  <%= f.label :married %>
-		  <%= f.select :married, APP_CONFIG['options']['married'] %>
-	    </div>
+	  
+	  <div>
+  		<%= f.label :spouse %>
+  		<%= f.text_field :spouse %>
 	  </div>
 	  
 	  <div>
-  		<%= f.label :work_status %>
-  		<%= f.select :work_status, APP_CONFIG['options']['work_status'] %>
+  		<%= f.label :account %>
+  		<%= f.text_field :account %>
 	  </div>
 	  
 	  <div>
@@ -199,14 +182,32 @@
   		<%= f.text_field :top_label %>
 	  </div>
 	  
-	  	  <div>
-  		<%= f.label :spouse %>
-  		<%= f.text_field :spouse %>
+	  <div class="two-col">
+	      <div>
+		  <%= f.label :category_id, 'Category' %>
+		  <%= f.select :category_id, APP_CONFIG['options']['category'], { :include_blank => true } %>
+	      </div>
+	    
+	      <div>
+		  <%= f.label :student %>
+		  <%= f.select :student, APP_CONFIG['options']['student'] %>
+	      </div>
+	  </div>
+	  <div class="two-col last">
+	      <div>
+		  <%= f.label :patient_type %>
+		  <%= f.select :patient_type, APP_CONFIG['options']['type'] %>
+	      </div>
+	    
+	      <div>
+		  <%= f.label :married %>
+		  <%= f.select :married, APP_CONFIG['options']['married'] %>
+	      </div>
 	  </div>
 	  
 	  <div>
-  		<%= f.label :account %>
-  		<%= f.text_field :account %>
+  		<%= f.label :work_status %>
+  		<%= f.select :work_status, APP_CONFIG['options']['work_status'] %>
 	  </div>
 	</div>
 	
