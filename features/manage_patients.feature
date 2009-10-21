@@ -22,8 +22,8 @@ Scenario: Create Valid Patient
   And I fill in "Zip" with "48347"
   And I fill in "Phone" with "123-33-23"
   And I fill in "SS#" with "324098325"
-  And I press "Submit"
-  Then I should see "Successfully created patient."
+  And I press "Save"
+  Then I should see "Successfully created a patient"
   And I should have 1 patient
   When I go to the list of patients
   Then I should see "Eric"

@@ -2,14 +2,14 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Handyworks") %></title>
+    <title>Handyworks - <%= h(yield(:title) || "Home") %></title>
     <%= stylesheet_link_tag 'application' %>
     <%= yield(:head) %>
   </head>
   <body>
     <div id="container">
-
-	  <p class="name">Universal Health Clinic</p>
+      
+  	  <p class="name">Universal Health Clinic</p>
 
 	  <ul class="steps">
 		<li class="first"><a href="/">Home</a></li>
