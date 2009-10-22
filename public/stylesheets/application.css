@@ -79,6 +79,8 @@
     font-size:1.2em;
   }
 
+  div#container { overflow:hidden; }
+  
   h1 {
     float:left;
     width:100%;
@@ -385,7 +387,7 @@
       div.form div.last-visit select#patient_last_visit_3i { width:4.5em; }
       
   div.buttons-area {
-    padding: 1em 0 2em 3em;
+    padding: 1em 0 0 3em;
     float:left;
     width:100%;
     color:#333;
@@ -427,3 +429,9 @@ div.buttons-area p.required {
 	padding-left:1em;
 	width:11em !important;
 }
+
+div.footer {
+  clear:both; width:100%; text-align:right; }
+
+body div.footer a { border:none; text-decoration:none; }
+body div.footer a img { border:0; }
