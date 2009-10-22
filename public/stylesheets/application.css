@@ -384,9 +384,6 @@
       div.form div.first-visit select#patient_first_visit_3i,
       div.form div.last-visit select#patient_last_visit_3i { width:4.5em; }
       
-      div.form div.last-visit { padding-bottom:8em; }
-      
-
   div.buttons-area {
     padding: 1em 0 2em 3em;
     float:left;
