@@ -4,12 +4,8 @@ set :scm, :git
 set :branch, "master"
 set :deploy_via, :remote_cache
 set :deploy_to, "/var/www/rails/#{application}"
-set :user, "admin"
 set :use_sudo, false
 
-# role :app, "handyworks.flatsourcing.com"
-# role :web, "handyworks.flatsourcing.com"
-# role :db,  "handyworks.flatsourcing.com", :primary => true
 server "handyworks.flatsourcing.com", :app, :web, :db, :primary => true
 
 namespace :deploy do
