@@ -2,7 +2,7 @@ Factory.define :patient do |f|
 	f.title 'Mr'
 	f.first_name 'Name'
 	f.last_name 'Family'
-	f.email 'no@email'
+	f.email 'noreply@example.com'
 	f.nickname 'nick'
 	f.address1 'Street'
 	f.city 'City'
@@ -11,7 +11,8 @@ Factory.define :patient do |f|
 	f.phone '123-12-12'
 	f.work_phone '123-12-12'
 	f.cell_phone '123-12-12'
-	f.social_security_number '12312414'
+	f.social_security_number '123-12-4141'
 	f.birth_date '11/11/1985'
 	f.sex 'M'
+	f.account '123456'
 end
