@@ -11,18 +11,6 @@
 
 ActiveRecord::Schema.define(:version => 20091020073028) do
 
-  create_table "categories", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "clinics", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "patients", :force => true do |t|
     t.string   "title"
     t.string   "first_name"
@@ -64,12 +52,6 @@ ActiveRecord::Schema.define(:version => 20091020073028) do
     t.boolean  "supress_mail"
     t.boolean  "inactive"
     t.string   "top_label"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "reffered_bies", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
