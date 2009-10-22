@@ -14,6 +14,15 @@
     /*background:url('images/bg.gif') #888;*/
     background:#888;
     }
+    
+  ::selection {
+    background: #600;
+    color:#FFC;
+    }
+    ::-moz-selection {
+    background: #600;
+    color:#FFC;
+    }
 
   a {
     color:#fff;
@@ -146,7 +155,6 @@
     margin: 5px;
     padding: 3px;
   }
-
   ul.steps {
     float: right;
     background:url('/images/menu-bg.gif') top left repeat-x;
@@ -154,9 +162,9 @@
     border:2px solid #555;
     border-top:0;
     -moz-border-radius-bottomleft:10px;
-    -webkit-border-radius-bottomleft:10px;
+    -webkit-border-bottom-left-radius:10px;
     -moz-border-radius-bottomright:10px;
-    -webkit-border-radius-bottomright:10px;
+    -webkit-border-bottom-right-radius:10px;
     margin:-2.5em 2em 1em;
   }
     ul.steps li {
@@ -174,24 +182,45 @@
         font-weight:normal;
         font-size:1.1em;
         color:#999;
-        text-decoration:none;
-
+        text-decoration:underline;
       }
-      ul.steps li.active a { color:#fff; text-decoration:underline; cursor:pointer; }
-      ul.steps li.first a  { background:url('/images/med.gif') 0.5em 0 no-repeat; padding-left:4em; }
+      ul.steps li a:hover { color:#fff; }
+      ul.steps li.active a { color:#fff; text-decoration:underline; }
       ul.steps li.last a {
         border:none;
       }
+      ul.steps li.first a:hover {
+      	background:url('/images/med.gif') 0.5em 0 no-repeat #333;
+        color:#fff;
+
+      }
+      ul.steps li.first a:hover {
+        -moz-border-radius-bottomleft:5px;
+	-webkit-border-bottom-left-radius:5px;
+      }
+      ul.steps li.first.current a {
+        -moz-border-radius-bottomleft:5px;
+	-webkit-border-bottom-left-radius:5px;
+        background:#699;
+      }
+      ul.steps li.last a:hover {
+	-webkit-border-bottom-right-radius:5px;
+        -moz-border-radius-bottomrigth:5px;	
+      }
+
+      ul.steps li.active a { color:#fff; text-decoration:underline; cursor:pointer; }
+      ul.steps li.first a  { background:url('/images/med.gif') 0.5em 0 no-repeat; padding-left:4em; }
+
       ul.steps li.active a:hover {
         background:#333;
       }
       ul.steps li.first a:hover {
         -moz-border-radius-bottomleft:5px;
-	-webkit-border-radius-bottomleft:5px;
+	-webkit-border-bottom-left-radius:5px;
       }
       ul.steps li.last a:hover {
         -moz-border-radius-bottomright:5px;
-	-webkit-border-radius-bottomright:5px;
+	-webkit-border-bottom-right-radius:5px;
       }
 
   hr {
@@ -207,9 +236,9 @@
       background:#fff;
       color:#666;
       -moz-border-radius-topleft:10px;
-      -webkit-border-radius-topleft:10px;
+      -webkit-border-top-left-radius:10px;
       -moz-border-radius-topright:10px;
-      -webkit-border-radius-topright:10px;
+      -webkit-border-top-right-radius:10px;
       padding:0.8em 2.5em;
       line-height:2em;
       *line-height:2.5em;
@@ -312,58 +341,6 @@
     padding: 3px;
   }
 
-  ul.steps {
-    float: right;
-    background:url('/images/menu-bg.gif') top left repeat-x;
-    padding:0;
-    border:2px solid #555;
-    border-top:0;
-    -moz-border-radius-bottomleft:10px;
-    -webkit-border-radius-bottomleft:10px;
-    -moz-border-radius-bottomright:10px;
-    -webkit-border-radius-bottomright:10px;
-    margin:-2.5em 2em 1em;
-  }
-    ul.steps li {
-      list-style: none;
-      float: left;
-      }
-      ul.steps li a {
-        display:block;
-        border:none;
-        border-right:0.1em solid #444;
-        padding:0.7em 2.5em;
-        margin:0;
-        width:auto;
-        height:auto;
-        font-weight:normal;
-        font-size:1.1em;
-        color:#999;
-        text-decoration:underline;
-      }
-      ul.steps li a:hover { color:#fff; }
-      ul.steps li.active a { color:#fff; text-decoration:underline; }
-      ul.steps li.last a {
-        border:none;
-      }
-      ul.steps li.first a:hover {
-      	background:url('/images/med.gif') 0.5em 0 no-repeat #333;
-        color:#fff;
-
-      }
-      ul.steps li.first a:hover {
-        -moz-border-radius-bottomleft:5px;
-	-webkit-border-radius-bottomleft:5px;
-      }
-      ul.steps li.first.current a {
-        -moz-border-radius-bottomleft:5px;
-	-webkit-border-radius-bottomleft:5px;
-        background:#699;
-      }
-      ul.steps li.last a:hover {
-        -moz-border-radius-bottomrigth:5px;
-	-webkit-border-radius-bottomright:5px;
-      }
   form { float:left; }
 
   div.form {
