@@ -178,7 +178,7 @@
 
       }
       ul.steps li.active a { color:#fff; text-decoration:underline; cursor:pointer; }
-      ul.steps li.first a  { background:url('/images/med.png') 0.5em 0 no-repeat; padding-left:4em; }
+      ul.steps li.first a  { background:url('/images/med.gif') 0.5em 0 no-repeat; padding-left:4em; }
       ul.steps li.last a {
         border:none;
       }
@@ -347,7 +347,7 @@
         border:none;
       }
       ul.steps li.first a:hover {
-      	background:url('/images/med.png') 0.5em 0 no-repeat #333;
+      	background:url('/images/med.gif') 0.5em 0 no-repeat #333;
         color:#fff;
 
       }
