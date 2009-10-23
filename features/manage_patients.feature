@@ -21,7 +21,8 @@ Scenario: Create Valid Patient
   And I fill in "State" with "Colorado"
   And I fill in "Zip" with "48347"
   And I fill in "Phone" with "123-33-23"
-  And I fill in "SS#" with "324098325"
+  And I fill in "SS#" with "324-09-8325"
+  And I fill in "Account" with "123456"
   And I press "Save"
   Then I should see "Successfully created a patient"
   And I should have 1 patient
