@@ -6,7 +6,7 @@ set :deploy_via, :remote_cache
 set :deploy_to, "/var/www/rails/#{application}"
 set :use_sudo, false
 
-server "handyworks.demo.flatsourcing.com", :app, :web, :db, :primary => true
+server "demo.flatsourcing.com", :app, :web, :db, :primary => true
 
 after "deploy:symlink", "deploy:symlink_configs"
 
